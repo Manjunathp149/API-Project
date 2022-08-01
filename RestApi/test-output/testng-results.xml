@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-01T09:40:57 IST" name="Default suite" finished-at="2022-08-01T09:41:28 IST" duration-ms="30986">
+    <groups>
+    </groups>
+    <test started-at="2022-08-01T09:40:57 IST" name="Default test" finished-at="2022-08-01T09:41:28 IST" duration-ms="30986">
+      <class name="RequestChaining.CreateProjectAndGet">
+        <test-method signature="createProjectAndGet()[pri:0, instance:RequestChaining.CreateProjectAndGet@770d3326]" started-at="2022-08-01T09:40:57 IST" name="createProjectAndGet" finished-at="2022-08-01T09:41:28 IST" duration-ms="30907" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createProjectAndGet -->
+      </class> <!-- RequestChaining.CreateProjectAndGet -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

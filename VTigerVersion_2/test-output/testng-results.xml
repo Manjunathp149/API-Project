@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="8" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-06-21T12:02:43 IST" name="Suite" finished-at="2022-06-21T12:04:51 IST" duration-ms="127968">
+    <groups>
+      <group name="RegressionTest">
+        <method signature="CreateOrganizationByExcelTest.CreateOrganization()[pri:0, instance:com.crm.CreateOrganization.CreateOrganizationByExcelTest@4803b726]" name="CreateOrganization" class="com.crm.CreateOrganization.CreateOrganizationByExcelTest"/>
+        <method signature="ToCreateOrganizationTest.CreateOrganization()[pri:0, instance:com.crm.CreateOrganization.ToCreateOrganizationTest@ffaa6af]" name="CreateOrganization" class="com.crm.CreateOrganization.ToCreateOrganizationTest"/>
+      </group> <!-- RegressionTest -->
+      <group name="smokeTest">
+        <method signature="CreateProductionTest.CreateProduct()[pri:0, instance:com.crm.CreateProducts.CreateProductionTest@6da21078]" name="CreateProduct" class="com.crm.CreateProducts.CreateProductionTest"/>
+        <method signature="CreateproductionbyexcelTest.CreateProduct()[pri:0, instance:com.crm.CreateProducts.CreateproductionbyexcelTest@7205765b]" name="CreateProduct" class="com.crm.CreateProducts.CreateproductionbyexcelTest"/>
+      </group> <!-- smokeTest -->
+    </groups>
+    <test started-at="2022-06-21T12:02:43 IST" name="TestRunner2" finished-at="2022-06-21T12:04:42 IST" duration-ms="118713">
+      <class name="com.crm.CreateOrganization.ToCreateOrganizationTest">
+        <test-method is-config="true" signature="launchTheBrowse()[pri:0, instance:com.crm.CreateOrganization.ToCreateOrganizationTest@ffaa6af]" started-at="2022-06-21T12:03:42 IST" name="launchTheBrowse" finished-at="2022-06-21T12:03:56 IST" duration-ms="13742" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchTheBrowse -->
+        <test-method is-config="true" signature="loginToAppln()[pri:0, instance:com.crm.CreateOrganization.ToCreateOrganizationTest@ffaa6af]" started-at="2022-06-21T12:03:56 IST" name="loginToAppln" finished-at="2022-06-21T12:04:10 IST" duration-ms="13920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToAppln -->
+        <test-method signature="CreateOrganization()[pri:0, instance:com.crm.CreateOrganization.ToCreateOrganizationTest@ffaa6af]" started-at="2022-06-21T12:04:10 IST" name="CreateOrganization" finished-at="2022-06-21T12:04:37 IST" duration-ms="27374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateOrganization -->
+        <test-method is-config="true" signature="LogoutFromAppln()[pri:0, instance:com.crm.CreateOrganization.ToCreateOrganizationTest@ffaa6af]" started-at="2022-06-21T12:04:37 IST" name="LogoutFromAppln" finished-at="2022-06-21T12:04:41 IST" duration-ms="3779" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogoutFromAppln -->
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:com.crm.CreateOrganization.ToCreateOrganizationTest@ffaa6af]" started-at="2022-06-21T12:04:41 IST" name="closeTheBrowser" finished-at="2022-06-21T12:04:42 IST" duration-ms="948" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTheBrowser -->
+      </class> <!-- com.crm.CreateOrganization.ToCreateOrganizationTest -->
+      <class name="com.crm.CreateOrganization.CreateOrganizationByExcelTest">
+        <test-method is-config="true" signature="dbconfig()[pri:0, instance:com.crm.CreateOrganization.CreateOrganizationByExcelTest@4803b726]" started-at="2022-06-21T12:02:43 IST" name="dbconfig" finished-at="2022-06-21T12:02:43 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dbconfig -->
+        <test-method is-config="true" signature="launchTheBrowse()[pri:0, instance:com.crm.CreateOrganization.CreateOrganizationByExcelTest@4803b726]" started-at="2022-06-21T12:02:43 IST" name="launchTheBrowse" finished-at="2022-06-21T12:02:53 IST" duration-ms="10039" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchTheBrowse -->
+        <test-method is-config="true" signature="loginToAppln()[pri:0, instance:com.crm.CreateOrganization.CreateOrganizationByExcelTest@4803b726]" started-at="2022-06-21T12:02:53 IST" name="loginToAppln" finished-at="2022-06-21T12:02:59 IST" duration-ms="5495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToAppln -->
+        <test-method signature="CreateOrganization()[pri:0, instance:com.crm.CreateOrganization.CreateOrganizationByExcelTest@4803b726]" started-at="2022-06-21T12:02:59 IST" name="CreateOrganization" finished-at="2022-06-21T12:03:38 IST" duration-ms="39219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateOrganization -->
+        <test-method is-config="true" signature="LogoutFromAppln()[pri:0, instance:com.crm.CreateOrganization.CreateOrganizationByExcelTest@4803b726]" started-at="2022-06-21T12:03:38 IST" name="LogoutFromAppln" finished-at="2022-06-21T12:03:41 IST" duration-ms="3341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogoutFromAppln -->
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:com.crm.CreateOrganization.CreateOrganizationByExcelTest@4803b726]" started-at="2022-06-21T12:03:41 IST" name="closeTheBrowser" finished-at="2022-06-21T12:03:42 IST" duration-ms="778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTheBrowser -->
+        <test-method is-config="true" signature="closeDBConfig()[pri:0, instance:com.crm.CreateOrganization.CreateOrganizationByExcelTest@4803b726]" started-at="2022-06-21T12:04:51 IST" name="closeDBConfig" finished-at="2022-06-21T12:04:51 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDBConfig -->
+      </class> <!-- com.crm.CreateOrganization.CreateOrganizationByExcelTest -->
+    </test> <!-- TestRunner2 -->
+    <test started-at="2022-06-21T12:02:43 IST" name="TestRunner1" finished-at="2022-06-21T12:04:51 IST" duration-ms="127968">
+      <class name="com.crm.CreateProducts.CreateproductionbyexcelTest">
+        <test-method is-config="true" signature="launchTheBrowse()[pri:0, instance:com.crm.CreateProducts.CreateproductionbyexcelTest@7205765b]" started-at="2022-06-21T12:03:42 IST" name="launchTheBrowse" finished-at="2022-06-21T12:03:56 IST" duration-ms="13540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchTheBrowse -->
+        <test-method is-config="true" signature="loginToAppln()[pri:0, instance:com.crm.CreateProducts.CreateproductionbyexcelTest@7205765b]" started-at="2022-06-21T12:03:56 IST" name="loginToAppln" finished-at="2022-06-21T12:04:08 IST" duration-ms="12620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToAppln -->
+        <test-method signature="CreateProduct()[pri:0, instance:com.crm.CreateProducts.CreateproductionbyexcelTest@7205765b]" started-at="2022-06-21T12:04:08 IST" name="CreateProduct" finished-at="2022-06-21T12:04:47 IST" duration-ms="39109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateProduct -->
+        <test-method is-config="true" signature="LogoutFromAppln()[pri:0, instance:com.crm.CreateProducts.CreateproductionbyexcelTest@7205765b]" started-at="2022-06-21T12:04:47 IST" name="LogoutFromAppln" finished-at="2022-06-21T12:04:51 IST" duration-ms="3495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogoutFromAppln -->
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:com.crm.CreateProducts.CreateproductionbyexcelTest@7205765b]" started-at="2022-06-21T12:04:51 IST" name="closeTheBrowser" finished-at="2022-06-21T12:04:51 IST" duration-ms="341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTheBrowser -->
+      </class> <!-- com.crm.CreateProducts.CreateproductionbyexcelTest -->
+      <class name="com.crm.CreateProducts.CreateProductionTest">
+        <test-method is-config="true" signature="launchTheBrowse()[pri:0, instance:com.crm.CreateProducts.CreateProductionTest@6da21078]" started-at="2022-06-21T12:02:43 IST" name="launchTheBrowse" finished-at="2022-06-21T12:02:54 IST" duration-ms="10772" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchTheBrowse -->
+        <test-method is-config="true" signature="loginToAppln()[pri:0, instance:com.crm.CreateProducts.CreateProductionTest@6da21078]" started-at="2022-06-21T12:02:54 IST" name="loginToAppln" finished-at="2022-06-21T12:03:01 IST" duration-ms="7446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToAppln -->
+        <test-method signature="CreateProduct()[pri:0, instance:com.crm.CreateProducts.CreateProductionTest@6da21078]" started-at="2022-06-21T12:03:01 IST" name="CreateProduct" finished-at="2022-06-21T12:03:37 IST" duration-ms="35108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateProduct -->
+        <test-method is-config="true" signature="LogoutFromAppln()[pri:0, instance:com.crm.CreateProducts.CreateProductionTest@6da21078]" started-at="2022-06-21T12:03:37 IST" name="LogoutFromAppln" finished-at="2022-06-21T12:03:41 IST" duration-ms="4761" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogoutFromAppln -->
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:com.crm.CreateProducts.CreateProductionTest@6da21078]" started-at="2022-06-21T12:03:41 IST" name="closeTheBrowser" finished-at="2022-06-21T12:03:42 IST" duration-ms="702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeTheBrowser -->
+      </class> <!-- com.crm.CreateProducts.CreateProductionTest -->
+    </test> <!-- TestRunner1 -->
+  </suite> <!-- Suite -->
+</testng-results>
