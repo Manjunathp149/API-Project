@@ -13,10 +13,10 @@ public static void main(String[] args) {
 			{
 				count++;	
 			}
-			if(count==0)
-			{
-				System.out.println(i);
-			}
+		}
+		if(count==0)
+		{
+			System.out.println(i);
 		}
 		
 	}

@@ -1,5 +1,6 @@
 package Practice;
 
+import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.List;
 
@@ -23,16 +24,15 @@ public class CheckBrokenLinkTest {
 		for(WebElement ch :List)
 		{
 			String URL = ch.getAttribute("href");
-			
+			verifyLinks(URL);
 		}
 		
-		public static void verifyLinks(String LinkURL) 
-		{
-			try
-			{
-				URL url=new URL(LinkURL);
-				
-			}
+	driver.quit();
 		}
+
+	public static void verifyLinks(String uRL) {
+		 url vrl = new url(uRL);
+		(HttpURLConnection)vrl
+	}
 	}
 }

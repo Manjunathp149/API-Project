@@ -3,17 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.Campaign.CampaignAdvanceSearchTTC_20Test">
+      <class name="Practice.CreateLeatTest">
         <methods>
-          <include name="dbconfig"/>
-          <include name="loginToAppln"/>
-          <include name="closeTheBrowser"/>
-          <include name="CampaignAdvanceSearch"/>
-          <include name="launchTheBrowse"/>
-          <include name="LogoutFromAppln"/>
-          <include name="closeDBConfig"/>
+          <include name="createLead"/>
         </methods>
-      </class> <!-- com.crm.Campaign.CampaignAdvanceSearchTTC_20Test -->
+      </class> <!-- Practice.CreateLeatTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

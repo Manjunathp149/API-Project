@@ -43,10 +43,13 @@ public class FlipkartAddToCartTest {
 		}
 		driver.findElement(By.xpath("//button[@class='_2KpZ6l _2U9uOA _3v1-ww']")).click();
 		driver.findElement(By.xpath("//a[@class='_2Kn22P gBNbID']"));
-		Assert.assertTrue(true);
+      
+		String s1 =driver.findElement(By.xpath("//div[.='APPLE iPhone 13 (Midnight, 128 GB)']")).getText();
+		String s = "APPLE iPhone 13 (Midnight, 128 GB)";
+		Assert.assertEquals(s, s1);
 		System.out.println("Mobile added to the cart");
 		
-		driver.close();
+		driver.quit();
 		
 	}
 }
