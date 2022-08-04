@@ -13,9 +13,9 @@ public class QueryParameter {
 	{
 		baseURI ="https://reqres.in";
 		
-		given().queryParam("page", 2)
+		/*given().queryParam("page", 2)
 		.when()
-		.get("/api/users")
+		.get("/api/users/data")
 		.then().log().all();
 	}
 }

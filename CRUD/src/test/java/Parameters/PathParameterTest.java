@@ -2,6 +2,7 @@ package Parameters;
 
 import static io.restassured.RestAssured.*;
 
+import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 
 public class PathParameterTest {
@@ -14,6 +15,7 @@ public class PathParameterTest {
 		baseURI ="http://localhost";
 		port = 8084;
 				
+		
 		
 		
 		    

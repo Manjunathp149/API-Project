@@ -13,11 +13,11 @@ public class GetSingleTest {
 	public void getSingleTest()
 	{
 		String projectId= "TY_PROJ_001";
-
+		
 		when().get("http://localhost:8084/projects/"+projectId)
 		
 		.then().assertThat().statusCode(200).log().all();
-//Response req = RestAssured.get("http://localhost:8084/projects/"+projectId+"");
+      //Response req = RestAssured.get("http://localhost:8084/projects/"+projectId+"");
 		
 		/*ValidatableResponse validate = req.then();
 		validate.log().all();*/

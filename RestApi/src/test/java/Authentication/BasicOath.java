@@ -20,7 +20,7 @@ public class BasicOath {
 		.get("/login")
 		.then().log().all();
 	}
-		public void digestAuth()
+		/*public void digestAuth()
 		{
 			given()
 			.auth().digest("rmgyantra","rmg@9999")
@@ -29,7 +29,7 @@ public class BasicOath {
 			.then().log().all();
 		}
 	
-		public void  primitiveAuthTest()
+	/*	public void  primitiveAuthTest()
 		{
 			baseURI="http://localhost";
 			port=8084;
@@ -41,5 +41,5 @@ public class BasicOath {
 			.when()
 			.get("/login")
 			.then().log().all();
-	}
+	}*/
 }
