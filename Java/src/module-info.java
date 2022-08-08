@@ -1,2 +1,2 @@
-module Java {
+module Java {retyugfchj
 }
