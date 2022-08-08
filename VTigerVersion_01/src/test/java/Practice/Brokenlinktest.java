@@ -15,12 +15,14 @@ import java.net.HttpURLConnection;
 	public class Brokenlinktest {
 	    public static void main(String[] args) {
 	    	WebDriverManager.chromedriver().setup();
+	    	
 	    	WebDriver driver = new ChromeDriver();
 	        driver.manage().window().maximize();
 	        driver.get("https://www.facebook.com/login/");
 
 	        //Storing the links in a list and traversing through the links
 	        List<WebElement> links = driver.findElements(By.tagName("a"));
+	         
 
 	        // This line will print the number of links and the count of links.
 	        System.out.println("No of links are "+ links.size());  
@@ -49,7 +51,7 @@ import java.net.HttpURLConnection;
 	            httpURLConnect.connect();
 	            if(httpURLConnect.getResponseCode()>=400)
 	            {
-	            	System.out.println(linkUrl+" - "+httpURLConnect.getResponseMessage()+"is a broken link");
+	            	System.out.println(linkUrl+" - "+httpURLConnect.getResponseMessage()+" "+httpURLConnect.getResponseCode()+""+"  : is a broken link");
 	            }    
 	       
 	            //Fetching and Printing the response code obtained
