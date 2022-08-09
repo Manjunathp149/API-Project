@@ -8,7 +8,7 @@ package projSerializationDeserialization;
 
 public class EmpDetails {
 	/**
-	 * 
+	 * Employee Details
 	 */
 	
 	//Create empty constructor to fectch details
