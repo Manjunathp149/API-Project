@@ -24,12 +24,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  */
 public class WebDriverUtilities {
 	Select select=null;
+	WebDriver  driver=null;
 /**
  * It is Used to move the cursor on Element
  * @param driver
  * @param ele
  */
-	public void WaitForPageToLoad(WebDriver driver)
+	public void WaitForPageToLoad()
 	{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); 
 	}
@@ -38,7 +39,7 @@ public class WebDriverUtilities {
 	 * @param driver
 	 * @param element
 	 */
-	public void WaitForTitleContains(WebDriver driver, String element)
+	public void WaitForTitleContains(String element)
 	{
 		WebDriverWait wait=new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.titleContains(element));
@@ -190,7 +191,7 @@ public class WebDriverUtilities {
 	{
 		TakesScreenshot ts=(TakesScreenshot)driver;
 		File src=ts.getScreenshotAs(OutputType.FILE);
-		File dst=new File(".\\screenshot/"+ScreenshotName+"PNG");
+		File dst=new File("./screenshot/"+ScreenshotName+".PNG");
 		FileUtils.copyFile(src, dst);
 	}
 	/**
@@ -198,10 +199,10 @@ public class WebDriverUtilities {
 	 * @param driver
 	 * @throws Throwable
 	 */
-	public void ScrollBarAction(WebDriver driver) throws Throwable
+	public void ScrollBarAction(WebDriver driver, int x,int y) throws Throwable
 	{
 		JavascriptExecutor js=(JavascriptExecutor)driver;
-		js.executeScript("window.scrollBy(0,500)");
+		js.executeScript("window.scrollBy("+x+","+y+")");
 	}
 	/**
 	 * It is used to drag and drop the from one element to other element
@@ -240,7 +241,6 @@ public class WebDriverUtilities {
 	 */
 	public void SelectInialization(WebElement element) {
 
-		 select=new Select(element);
 	}
 	/**
 	 * It is used to select the Dropdown by index
@@ -256,7 +256,7 @@ public class WebDriverUtilities {
 	 * @param element
 	 * @param string
 	 */
-	public void SelectDropdownByValue( String string)
+	public void SelectDropdown( String string)
 	{
 		
 		select.selectByValue(string);

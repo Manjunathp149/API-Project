@@ -15,7 +15,6 @@ import java.net.HttpURLConnection;
 	public class Brokenlinktest {
 	    public static void main(String[] args) {
 	    	WebDriverManager.chromedriver().setup();
-	    	
 	    	WebDriver driver = new ChromeDriver();
 	        driver.manage().window().maximize();
 	        driver.get("https://www.facebook.com/login/");

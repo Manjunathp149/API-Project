@@ -1,7 +1,7 @@
 package PracticeArrays;
 
 import java.util.Arrays;
-import java.util.TreeSet;
+import java.util.LinkedHashSet;
 
 public class FindDuplicateInArraysTest
 {
@@ -9,8 +9,8 @@ public class FindDuplicateInArraysTest
 	{
 	int [] a= { 8 ,7 ,5,5,0,0,0,7,7};
 	
-	int count= 0;
-	TreeSet<Integer> set=new TreeSet<Integer>();
+	
+	LinkedHashSet<Integer> set=new LinkedHashSet<Integer>();
 	for(int i=0;i<a.length;i++)
 	{
 		set.add(a[i]);
@@ -18,20 +18,21 @@ public class FindDuplicateInArraysTest
 	
 	for(Integer it:set)
 	{
-			
+		int count= 0;	
 		for(int i=0;i<a.length;i++)
 		{
 			if(it==a[i])
 			{
 				count++;
+				//,break;
 			}
-			
+			if(count>1)
+			{
+				System.out.print(a[i]+" ");
+			}	
 		}
 		
-	}
-	if(count>1)
-	{
-		System.out.println(Arrays.toString(a));
+		
 	}
 	
 	}

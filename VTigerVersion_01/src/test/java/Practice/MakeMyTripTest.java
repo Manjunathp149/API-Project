@@ -13,6 +13,7 @@ public static void main(String[] args)
 	WebDriverManager.chromedriver().setup();
 	ChromeDriver driver = new ChromeDriver();
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	driver.manage().window().maximize();
 	driver.navigate().to("https://www.makemytrip.com/");
 	driver.findElement(By.xpath("//span[.='Hotels']")).click();
 	driver.findElement(By.xpath("//span[.='City, Property name or Location']")).click();

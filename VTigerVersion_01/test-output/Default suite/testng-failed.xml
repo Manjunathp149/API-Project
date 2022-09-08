@@ -3,11 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Practice.CreateLeatTest">
+      <class name="com.crm.CreateOrganization.ToCreateOrganizationTest">
         <methods>
-          <include name="createLead"/>
+          <include name="dbconfig"/>
+          <include name="loginToAppln"/>
+          <include name="closeTheBrowser"/>
+          <include name="CreateOrganization"/>
+          <include name="launchTheBrowse"/>
+          <include name="LogoutFromAppln"/>
+          <include name="closeDBConfig"/>
         </methods>
-      </class> <!-- Practice.CreateLeatTest -->
+      </class> <!-- com.crm.CreateOrganization.ToCreateOrganizationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

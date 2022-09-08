@@ -54,7 +54,7 @@ public class BaseClassUtilities {
 			}
 			sdriver=driver;
 			//Use implicitly wait
-			wLib.WaitForPageToLoad(driver);
+			wLib.WaitForPageToLoad();
 			
 			
 			

@@ -3,6 +3,7 @@ package TestsByGenericUtilitis;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import GenericUtilities.FileUtilities;
@@ -12,15 +13,15 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class OrganizationTC_41 {
 public static void main(String[] args) throws Throwable {
 	//System.setProperty(IpathConstants.ChromeKey, IpathConstants.Chromepath);
-	WebDriverManager.firefoxdriver().setup();
-	WebDriver driver=new FirefoxDriver();
+	WebDriverManager.chromedriver().setup();
+	WebDriver driver=new ChromeDriver();
 	FileUtilities fu=new FileUtilities();
 	WebDriverUtilities WD=new WebDriverUtilities();
-	WD.WaitForPageToLoad(driver);
+	WD.WaitForPageToLoad();
 	String URL=fu.getproperetykeyvalue("url");
 	String USERNAME=fu.getproperetykeyvalue("username");
 	String PASSWORD=fu.getproperetykeyvalue("password");
-	WD.TakeScreenShot(driver, "Hui");
+	WD.TakeScreenShot(driver, "Hey");
 	driver.get(URL);
 	driver.findElement(By.name("user_name")).sendKeys(USERNAME);
 	driver.findElement(By.name("user_password")).sendKeys(PASSWORD);

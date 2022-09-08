@@ -17,7 +17,7 @@ public class CampaignAdvanceSaerchTest extends BaseClassUtilities{
 
 
 	
-	@Test(groups="smokeTest")
+	@Test(retryAnalyzer = GenericUtilities.RetryAnalyserImplementation.class)   //(groups="smokeTest")
 	public void CampaignAdvanceSearch()
 	{
 		

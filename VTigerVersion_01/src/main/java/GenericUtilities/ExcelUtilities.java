@@ -4,6 +4,7 @@ package GenericUtilities;
  * 
  */
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import org.apache.poi.ss.usermodel.Cell;
@@ -20,17 +21,18 @@ public class ExcelUtilities
 	 * @param Row
 	 * @param Cell
 	 * @return
+	 * @throws IOException 
 	 * @throws Throwable
 	 * @throws IOException
 	 */
-	public String Readfromexcel(String name, int Row, int Cell) throws Throwable, IOException
+	public String Readfromexcel(String name, int Row, int Cell) throws IOException 
 	{
-		FileInputStream fis=new FileInputStream("./src/test/resources/Book1.xlsx");
+		FileInputStream fis=new FileInputStream("./src/test/resources/ProjectDet.xlsx");
 		Workbook wb=WorkbookFactory.create(fis);
-		Sheet sh=wb.getSheet(name);
-		Row R=sh.getRow(Row);
-		Cell c=R.getCell(Cell);
-		String value=c.toString();
+		String value=wb.getSheet(name).getRow(Row).getCell(Cell).toString();
+//		Row R=sh.getRow(Row);
+//		Cell c=R.getCell(Cell);
+//		String value=c.toString();
 		return value;
 }
 	/**
@@ -46,9 +48,9 @@ public class ExcelUtilities
 	{
 		FileInputStream fis=new FileInputStream("./src/test/resources/Book1.xlsx");
 		Workbook wb=WorkbookFactory.create(fis);
-		Sheet sh=wb.getSheet(name);
-		Row R=sh.getRow(Row);
-		Cell c=R.getCell(Cell);
+		Cell c=wb.getSheet(name).getRow(Row).getCell(Cell);
+//		Row R=sh.getRow(Row);
+//		Cell c=R.getCell(Cell);
 		c.setCellValue(data);
 		FileOutputStream fos=new FileOutputStream("./src/test/resources/Book1.xlsx");
 		wb.write(fos);

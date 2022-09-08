@@ -39,7 +39,7 @@ public class CreateCampaignTest extends BaseClassUtilities {
 	int rannum=jLib.getRandomNumber();
 	
 	//Fetchinbg data from excel
-	String campname=eLib.Readfromexcel("campname", 1, 1)+rannum;
+	String campname=eLib.Readfromexcel("Sheet3", 1, 1)+rannum;
 	
 	//Click on Product major tab in Home page
 	HomePage h=new HomePage(driver);
